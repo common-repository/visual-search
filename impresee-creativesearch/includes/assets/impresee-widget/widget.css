@@ -1,0 +1,100 @@
+#impresee-search-tab {
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    padding-top: 0.2em;
+    position: absolute;
+    z-index: 9999999999999;
+    top: 0;
+    left: 0;
+}
+#impresee-search-tab ul {
+    width: 14em;
+    padding: 0;
+    margin: 0;
+}
+#impresee-search-tab li {
+    height: 2.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    display: flex;
+    line-height: 2.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#impresee-search-tab li:nth-of-type(2) {
+    animation-delay: 0.25s;
+}
+
+#impresee-search-tab li:nth-of-type(3) {
+    animation-delay: 0.50s;
+}
+#impresee-search-tab .impresee-hidden-bar {
+    display: none;
+}
+#impresee-search-tab .impresee-flip-in {
+   backface-visibility: hidden;
+   animation: impresee-flipdown 0.5s ease both;
+   transform: translateZ(0);
+}
+@keyframes impresee-flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+    5% {
+        opacity: 1;
+    }
+    80% {
+        transform: rotateX(8deg);
+    }
+    83% {
+        transform: rotateX(6deg);
+    }
+    92% {
+        transform: rotateX(-3deg);
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
+}
+#impresee-search-tab .impresee-search-by-photo {
+    border-radius: 0 1em 0 0;
+}
+#impresee-search-tab .impresee-search-by-sketch {
+    border-radius: 0  0 1em 0;
+}
+.impresee-top-right-radius {
+    border-radius: 0 0.8em 0 0;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.impresee-bottom-right-radius {
+    border-radius: 0  0 0.8em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+}
+.impresee-search-label {
+    padding: 0 0.5em;
+    max-width: 150px;
+}
+#impresee-search-tab .impresee-icon {
+    max-width: 30px;
+    position: initial !important;
+    padding: 0.3em 0 !important;
+    height: auto !important;
+}
+.impresee-hidden-bar {
+    display: none;
+}

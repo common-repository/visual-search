@@ -1,0 +1,118 @@
+.impresee-indexation-steps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.impresee-step {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    height: 2em;
+    line-height: 2em;
+}
+.impresee-step-state-image-ready + span{
+    margin: 0 0.5em;
+    color: #4D4D4D;
+}
+.impresee-step-state-image-loading + span {
+    margin: 0 0.5em;
+    color: #4D4D4D;
+}
+.impresee-process-completion-information {
+    margin: 1em 2em;
+}
+.impresee-loading-button {
+    color: #2D2662;
+    background-color: #E6E6E6;
+    height: 2.5em;
+    font-size: 1.4em;
+    line-height: 2.5em;
+    width: 8em;
+    pointer-events: none;
+    text-decoration: none;
+    text-align: center;
+    display: none;
+}
+.impresee-invisible {
+    display: none;
+}
+.impresee-ready-button {
+    background-color: #2D2662;
+    color: white;
+    height: 2.5em;
+    font-size: 1.4em;
+    line-height: 2.5em;
+    width: 8em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+.impresee-card-footer {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.impresee-back-to-admin {
+    margin-top: 1em;
+    text-decoration: none;
+    color: #6D6D6D;
+    display: flex;
+    min-height: 40px;
+}
+.impresee-back-to-admin img {
+    max-height: 20px;
+}
+
+.impresee-back-to-admin span {
+    font-weight: lighter;
+    margin-left: 0.5em;
+}
+.impresee-progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 0.5em;
+}
+.impresee-bar-step-container {
+}
+#impresee-step-count {
+    flex: 1;
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 1em;
+}
+#impresee-progress-bar {
+  width: 0%;
+  height: 15px;
+  background-color: #9CD333;
+  text-align: center;
+  line-height: 15px;
+  color: black;
+  flex:5;
+  font-size: 0.85em;
+}
+.impresee-step-progress {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    font-weight: bold;
+    max-width: 80%;
+    text-align: center;
+}
+#impresee-step-remaining-time {
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+.impresee-step-progress {
+    max-width: 40%;
+}
+}
+@media only screen and (max-width: 1024px) {
+    .impresee-body {
+        padding: 0.5em 1em;
+    }
+}

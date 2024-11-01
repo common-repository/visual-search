@@ -1,0 +1,12 @@
+.impresee {
+    font-weight: bold;
+}
+.impresee.ready {
+    color: #9cd333;
+}
+.impresee.error {
+    color: red;
+}
+.impresee.processing {
+    color: #CCCC00;
+}

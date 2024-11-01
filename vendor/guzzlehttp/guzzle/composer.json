@@ -1,0 +1,69 @@
+{
+    "name": "guzzlehttp/guzzle",
+    "type": "library",
+    "description": "Guzzle is a PHP HTTP client library",
+    "keywords": [
+        "framework",
+        "http",
+        "rest",
+        "web service",
+        "curl",
+        "client",
+        "HTTP client"
+    ],
+    "homepage": "http://guzzlephp.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Dowling",
+            "email": "mtdowling@gmail.com",
+            "homepage": "https://github.com/mtdowling"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/http-message.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/Impresee/guzzle-psr7"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-json": "*",
+        "symfony/polyfill-intl-idn": "^1.17.0",
+        "GuzzleHttp/promises": "^1.0",
+        "GuzzleHttp/psr7": "1.x-dev"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+        "psr/log": "^1.1"
+    },
+    "suggest": {
+        "psr/log": "Required for using the Log middleware"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "6.5-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ImpreseeGuzzleHttp\\": "src/"
+        },
+        "files": [
+            "src/impresee_functions_include.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ImpreseeGuzzleHttp\\Tests\\": "tests/"
+        }
+    }
+}

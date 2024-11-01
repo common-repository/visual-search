@@ -1,0 +1,42 @@
+{
+    "name": "calvarez/woocommerce-plugin",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "SEE\\WC\\CreativeSearch\\": "impresee-creativesearch/includes"
+        }
+    },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/Impresee/guzzle"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/impresee-creative-search-bar-php-base.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/guzzle-psr7.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "impresee/impresee-creative-search-bar-php-base": "1.2.x-dev"
+    },
+    "authors": [
+        {
+            "name": "Camila Alvarez",
+            "email": "cam.alvarez.i@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~6"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    }
+}

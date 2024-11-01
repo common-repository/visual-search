@@ -1,0 +1,57 @@
+{
+    "name": "impresee/impresee-creative-search-bar-php-base",
+    "description": "Base code for a PHP-based creative search bar plugin",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Impresee\\CreativeSearchBar\\": "src/"
+        }
+    },
+    "minimum-stability" : "dev",
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/guzzle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/guzzle-psr7.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/http-message.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Impresee/guzzle_retry_middleware.git"
+        }
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Impresee, Inc.",
+            "email": "support@impresee.com"
+        }
+    ],
+    "require": {
+        "symfony/polyfill-ctype": "^1.17.0 <1.18.0",
+        "symfony/polyfill-intl-normalizer": "^1.17.0 <1.18.0",
+        "symfony/polyfill-intl-idn": "^1.17.0 <1.18.0",
+        "symfony/polyfill-mbstring": "^1.17.0 <1.18.0",
+        "php-di/php-di": "6.3",
+        "composer/installers": "~1.0",
+        "php-fp/php-fp-either": "^1.0",
+        "ramsey/uuid": "^3",
+        "caseyamcl/guzzle_retry_middleware": "2.3.x-dev",
+        "guzzlehttp/promises": "^1.3",
+        "guzzlehttp/guzzle": "6.5.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
